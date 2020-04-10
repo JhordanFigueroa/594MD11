@@ -1,5 +1,5 @@
 # 594MD11
-CIT 594 Module 11 Programming Assignment
+## CIT 594 Module 11 Programming Assignment
 In this assignment, you will apply the design principles and design patterns that we
 recently covered in class in developing a Java application to read text files as input and
 perform some analysis.
@@ -9,21 +9,23 @@ Please note that you have two weeks to complete this assignment, but it is likel
 more time-consuming than previous assignments. Please be sure to give yourself time
 to think about the design of your program and the organization of your code before you
 start implementing it.
-Learning Objectives
+
+## Learning Objectives
 In completing this assignment, you will learn how to:
 ● Design a software system using an N-tier architecture
 ● Design software using the principles of modularity, functional independence, and
 abstraction
 ● Apply the Singleton design pattern
 ● Use a Java library to read data stored in a JSON file
-Background
+
+## Background
 Government agencies such as the Centers for Disease Control can use social media
 information to get an understanding of the spread of infectious disease. By analyzing
 the use of words and expressions that appear over time on platforms such as Twitter,
 Facebook, etc., it is possible to estimate where the disease is affecting people and
 whether it is spreading or appears to be contained.
-CIT 594 - Data Structures and Software Design | Property of Penn Engineering
-In this assignment, you will design and develop an application that analyzes a small set
+
+##In this assignment, you will design and develop an application that analyzes a small set
 of Twitter data to look for tweets regarding occurrences of the flu and determines the
 US states in which these tweets occur.
 Information about the format of the input data, the functional specification of the
@@ -33,7 +35,8 @@ Input Data Format
 Your program needs to be able to read the tweets from both a tab-separated file and
 from a JSON file; the user of the program will specify which input type to use. The
 formats of these files are described below.
-Tweets: Tab-Separated
+
+###Tweets: Tab-Separated
 Each line of the file contains the data for a single tweet and contains four tab-separated
 fields:
 1. The latitude and longitude of the location of the tweet. This field is demarcated by
@@ -44,8 +47,8 @@ purposes.
 4. The text of the tweet.
 The following is an example of the data for a single tweet:
 [41.38, -81.49] 6 2019-01-28 19:02:28 Yay, homework!
-CIT 594 - Data Structures and Software Design | Property of Penn Engineering
-Tweets: JSON
+
+###Tweets: JSON
 JSON (“JavaScript Object Notation”) is a popular standard for exchanging data on the
 World Wide Web. Put simply, a JSON “object” is delineated by curly braces, and each
 field is indicated as comma-separated key/value pairs, like this:
@@ -69,36 +72,19 @@ This represents an array of JSON objects, each of which has a “name” and an 
 the fact that these are in different orders in each object does not matter.
 The following code would use the JSON.simple library to read the file and print each
 dog’s name:
-CIT 594 - Data Structures and Software Design | Property of Penn Engineering
-// create a parser
-JSONParser parser = new JSONParser();
-// open the file and get the array of JSON objects
-JSONArray dogs = (JSONArray)parser.parse(new FileReader("dogs.json"));
-// use an iterator to iterate over each element of the array
-Iterator iter = dogs.iterator();
-// iterate while there are more objects in array
-while (iter.hasNext()) {
-// get the next JSON object
-JSONObject dog = (JSONObject) iter.next();
-// use the "get" method to print the value associated with that key
-System.out.println(dog.get("name"));
-}
-Note : Although you may use the above code as a starting point, be careful about
-copy/pasting it into Eclipse, as the double-quotes and other special characters may
-cause errors. You may need to change those before compiling your code.
-Also: do not attempt to write your own code to parse the JSON file! Although it is
-possible, it would be extremely time-consuming, and not the point of the assignment.
+
 Use the JSON.simple library that we have provided and base your code off the sample
 above.
 States
+
 In order to determine the state from which each tweet originated, your program will also
 need to read a file that contains the latitude and longitude of the center of each of the 50
 states, plus Washington DC, in comma-separated format. Each line of the file contains
 the data for a single state and contains the name of the state, the latitude, and the
 longitude. Following is an example:
 Alabama,32.7396323,-86.8434593
-CIT 594 - Data Structures and Software Design | Property of Penn Engineering
-Sample Input Files
+
+####Sample Input Files
 Your program will be evaluated using the following input files:
 ● a set of 10,000 tweets in tab-separated format (flu_tweets.txt)
 ● the same 10,000 tweets in JSON format (flu_tweets.json)
@@ -108,7 +94,8 @@ Download the three files and add them to your Eclipse project’s root directory
 you can test your program.
 You can, of course, create your own input files for testing, but the correctness of your
 program will be determined using the files we provide.
-Functional Specifications
+
+##Functional Specifications
 This section describes the specification that your program must follow. Some parts may
 be under-specified; you are free to interpret those parts any way you like, within reason,
 but you should ask a member of the instruction staff if you feel that something needs to
@@ -123,9 +110,8 @@ Do not prompt the user for this information! These should be specified when the
 program is started (e.g. from the command line or using an Eclipse Run Configuration).
 If you do not know how to do this, please see the documentation at
 https://docs.oracle.com/javase/tutorial/essential/environment/cmdLineArgs.html .
-CIT 594 - Data Structures and Software Design | Property of Penn Engineering
-The program should display an error message and immediately terminate upon any of
-the following conditions:
+
+####The program should display an error message and immediately terminate upon any of the following conditions:
 ● the number of arguments is incorrect
 ● the format is neither “json” nor “text” (case-insensitive)
 ● the specified tweets file or states file does not exist or cannot be opened for
@@ -139,7 +125,8 @@ second argument specifies a well-formed JSON file, assuming it exists.
 These are pretty big assumptions but will greatly simplify this assignment!
 Last, if the log file does not exist already, your program should create it and not show
 any error message. That is, you should not assume that the log file already exists.
-Identifying relevant tweets
+
+##Identifying relevant tweets
 Your program should print the number of “flu tweets” per state in the input file.
 A “flu tweet” is a tweet in which the text satisfies one of the following:
 ● contains the word “flu”; note that it can be at the start, in the middle, or at the end
@@ -150,7 +137,6 @@ Your program should treat the tweet text as case-insensitive, e.g. it should con
 instances of both “flu” and “FLU”.
 The table below provides examples of text that should and should not be considered “flu
 tweets”:
-CIT 594 - Data Structures and Software Design | Property of Penn Engineering
 Text Flu tweet?
 I feel like I have the flu and I hate it Yes
 Flu symptoms are the worst Yes
@@ -163,6 +149,7 @@ Don’t be in flu enced by fake news No
 so sick with the # flu e gonna go home now No
 Although the last one is arguably a tweet that we should consider, you do not need to
 do so for the purposes of this assignment.
+
 Please do not spend too much time worrying about what is and what is not a “flu tweet,”
 as that is not the main point of the assignment. We’re not trying to trick you, we
 promise! As long as your code works correctly for the examples provided above, and is
@@ -172,7 +159,8 @@ and probably not super-accurate, but determining whether a tweet really does ind
 that someone has the flu is waaaay outside the scope of this assignment. So even if
 you come up with a more accurate solution, please be sure to follow the specifications
 described here!
-Determining location of tweet
+
+##Determining location of tweet
 Once you have found the “flu tweets,” you will need to determine the state in which each
 originated. To identify the location of each tweet, use the coordinates of the center of
 each state (according to the states file) and assume that the tweet originated in the
@@ -180,7 +168,6 @@ state to which its coordinates are closest; you can break ties in any manner you
 Determining the distance between coordinates is a little tricky since the earth is a
 sphere and not a plane, but for simplicity you should use the Euclidean distance .
 Although this approach is not completely accurate, it’s good enough for our purposes.
-CIT 594 - Data Structures and Software Design | Property of Penn Engineering
 As with detecting flu tweets, you may discover that this approach to determining the
 state from which a tweet originated is not entirely accurate either, e.g. Philadelphia is
 closer to the center of New Jersey than it is to the center of Pennsylvania. Regardless,
@@ -194,7 +181,9 @@ Alabama I have the flu!
 Each tweet should only be written to the log file once, but they can be written in any
 order you’d like. If a log file with the same name already exists when the program starts,
 its contents should be overwritten.
-Program output
+
+
+##Program output
 When your program finishes looking for “flu tweets” and determining their locations, it
 should print the number of “flu tweets” per state to the console using System.out, with
 the state names listed in alphabetical order (hint: think about which data structure you
@@ -206,7 +195,6 @@ Connecticut: 1
 New York: 7
 Pennsylvania: 5
 West Virginia: 3
-CIT 594 - Data Structures and Software Design | Property of Penn Engineering
 Note that these are not the correct outputs for the input files we provided; they are just
 given as an example of the output.
 Please do not post public questions in the discussion forum asking whether a
@@ -214,7 +202,8 @@ certain output is correct! It is up to each student to determine the correct out
 program.
 You should not list states for which there are zero “flu tweets” and the code you
 submit for grading should not print anything to the screen other than this output .
-Design Specification
+
+##Design Specification
 In addition to satisfying the functional specification described above, your program must
 also use some of the architecture and design patterns discussed in the videos.
 In particular, you must use the N-tier architecture to identify and then separate your
@@ -234,8 +223,8 @@ edu.upenn.cit594.datamanagement package
 edu.upenn.cit594.data package
 Additionally, you must use the Singleton design pattern to implement the logging
 functionality.
-CIT 594 - Data Structures and Software Design | Property of Penn Engineering
-Your Main class should be responsible for reading the runtime arguments (described
+
+##Your Main class should be responsible for reading the runtime arguments (described
 above), creating all the objects, arranging the dependencies between modules, etc. See
 the “Monolith vs. Modularity” reading assignment in Module 10 for an example if you are
 unsure how to do this.
@@ -248,27 +237,7 @@ The classes that read the input files should get the name of the input file via 
 constructor, passed from Main to whichever object creates them. The Singleton class
 that does the logging should have a static field for the name of the log file, which should
 be set by Main.
-Logistics
-Please be sure to read the section below, as some of the details for this project are
-different from that of other assignments.
-Getting Help on the Discussion Board
-As always, you are welcome to use the discussion board to ask clarification questions,
-get help with error messages (particularly when using the JSON library), and ask for
-general advice.
-However, please do not post public questions regarding the correct outputs for the
-program. For instance, please do not post public questions along the lines of “My
-program says that Connecticut has 4 flu tweets; is that right?” It’s important that all
-students determine for themselves whether their program is working correctly. Unlike
-other assignments, correct answers and test cases will not be provided in advance.
-Likewise, please do not post public questions such as “Should I put the code that reads
-the JSON file in the Processor tier or the Data Management tier?” since answering that
-is pretty much the point of the assignment!
-CIT 594 - Data Structures and Software Design | Property of Penn Engineering
-How to Submit
-To submit your solution, please create a .zip file containing all of your source code and
-upload it to the “Module 11 Programming Assignment Submission” assignment.
-Please do not submit the JSON jar file or any of the input files.
-Assessment
+
 This assignment is graded out of a total of 100 points. It will be graded by members of
 the instruction staff.
 The design of your system is worth 50 points, based on the correct use of the N-tier
@@ -284,4 +253,3 @@ following:
 ● Determine the state in which a tweet originated
 ● Produce the output in the expected format
 ● Write to the log file
-CIT 594 - Data Structures and Software Design | Property of Penn Engineering
