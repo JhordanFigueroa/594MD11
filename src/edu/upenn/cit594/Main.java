@@ -1,30 +1,68 @@
 package edu.upenn.cit594;
 
-import edu.upenn.cit594.datamanagement​.ParseJson;
-import edu.upenn.cit594.datamanagement​.ParseTxt;
+import edu.upenn.cit594.data.State;
+import edu.upenn.cit594.data.Tweet;
+import edu.upenn.cit594.datamanagement​.CSVFileReader;
+import edu.upenn.cit594.datamanagement​.JSONFileReader;
+import edu.upenn.cit594.datamanagement​.Reader;
+import edu.upenn.cit594.datamanagement​.TxtFileReader;
+import edu.upenn.cit594.processor.FluTweet;
+import edu.upenn.cit594.ui.UserInterface;
+
+import java.util.ArrayList;
 
 public class Main {
+    // Program args:
+    //  args[0] - file format, ex: json, txt
+    //  args[1] - file name, ex: flu_tweets
+    //  args[2] - the name of the states input file, ex: states.csv
+    //  args[3] - the name of the log file
 
     public static void main (String[] args) {
-        // Expected ARGS:
-        //file format  ex: json, txt                                                        args[0]
-        //file name ex: flu_tweets                                                          args[1]
-        //the name of the states input file  ex: states.csv                                 args[2]
-        //the name of the log file (for logging debug information; see “Logging” below)     args[3]
-
         if (args.length < 4) {
-            System.out.println("ERROR: INVALID NUMBER OF ARGS");
+            UserInterface.display("ERROR: INVALID NUMBER OF ARGS");
             return;
         }
 
+        String fileName = args[1];
         String fileFormat = args[0];
-        boolean isFormatValid = fileFormat.equals("json") || fileFormat.equals("txt");
+        String states = args[2];
+
+        boolean isFormatValid = fileFormat.equals("json") || fileFormat.equals("text");
         if (!isFormatValid) {
-            System.out.println("ERROR: INVALID FORMAT FOR FILE");
+            UserInterface.display("ERROR: INVALID FORMAT FOR FILE");
             return;
         }
+
+        ArrayList<Tweet> tweets = new ArrayList<>();
+        FluTweet fl = new FluTweet();
+        if (fileFormat.equals("json")) {
+            Reader readerJSON = new JSONFileReader(fileName, fileFormat);
+            tweets = readerJSON.getAllTweets();
+            fl.getFluTweets(tweets);
+        } else {
+            Reader readerTxt = new TxtFileReader(fileName, fileFormat);
+             tweets = readerTxt.getAllTweets();
+             fl.getFluTweets(tweets);
+        }
+
+//        for (Tweet tweet : tweets) {
+//            UserInterface.display(tweet.getText());
+//            UserInterface.display(tweet.getTime());
+//            UserInterface.display(tweet.getLatitude());
+//            UserInterface.display(tweet.getLongitude());
+////            UserInterface.display(tweet.getCoordinates());
+//        }
+
+//        ArrayList<State> allStates = new ArrayList<>();
+//        allStates = CSVFileReader.getAllStates(states);
 //
-//        ParseJson.parse(args[1], args[0]);
-        ParseTxt.readFile(args[1], args[0]);
+//        for (State st : allStates) {
+//            UserInterface.display(st.getState());
+//            UserInterface.display(st.getLatitude());
+//            UserInterface.display(st.getLongitude());
+//        }
+
+        //Create the objects and their relationships:
     }
 }
