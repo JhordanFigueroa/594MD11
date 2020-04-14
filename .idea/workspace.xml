@@ -2,34 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="471508f8-668e-4488-a72d-25a6e65603b4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/edu/upenn/cit594/datamanagement​/CSVFileReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/upenn/cit594/processor/CalculateDistance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flu_tweets.txt" beforeDir="false" afterPath="$PROJECT_DIR$/flu_tweets.text" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/594MD11/edu/upenn/cit594/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/594MD11/edu/upenn/cit594/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/594MD11/edu/upenn/cit594/data/State.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/594MD11/edu/upenn/cit594/data/State.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/594MD11/edu/upenn/cit594/data/Tweet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/594MD11/edu/upenn/cit594/data/Tweet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/594MD11/edu/upenn/cit594/datamanagement/ParseCsv.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/594MD11/edu/upenn/cit594/datamanagement/ParseJson.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/594MD11/edu/upenn/cit594/datamanagement/ParseTxt.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/594MD11/edu/upenn/cit594/logging/FluTweet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/594MD11/edu/upenn/cit594/logging/Logger.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/594MD11/edu/upenn/cit594/logging/Logger.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/594MD11/edu/upenn/cit594/processor/EuclideanDistance.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/594MD11/edu/upenn/cit594/processor/FluTweet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/594MD11/edu/upenn/cit594/processor/FluTweet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/594MD11/edu/upenn/cit594/processor/StateTweet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/594MD11/edu/upenn/cit594/processor/StateTweet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/594MD11/edu/upenn/cit594/ui/UserInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/594MD11/edu/upenn/cit594/ui/UserInterface.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/upenn/cit594/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/upenn/cit594/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/upenn/cit594/data/State.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/upenn/cit594/data/State.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/upenn/cit594/data/Tweet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/upenn/cit594/data/Tweet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/upenn/cit594/datamanagement​/ParseCsv.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/upenn/cit594/datamanagement​/ParseJson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/upenn/cit594/datamanagement​/JSONFileReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/upenn/cit594/datamanagement​/ParseTxt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/upenn/cit594/datamanagement​/TxtFileReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/upenn/cit594/logging/FluTweet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/upenn/cit594/logging/Logger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/upenn/cit594/logging/Logger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/upenn/cit594/processor/EuclideanDistance.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/upenn/cit594/processor/FluTweet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/upenn/cit594/processor/FluTweet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/upenn/cit594/processor/StateTweet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/upenn/cit594/processor/StateTweet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/upenn/cit594/ui/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/upenn/cit594/ui/UserInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +101,7 @@
       <workItem from="1586729432596" duration="12268000" />
       <workItem from="1586808048523" duration="17258000" />
       <workItem from="1586829871326" duration="5000" />
-      <workItem from="1586880129157" duration="191000" />
+      <workItem from="1586880129157" duration="658000" />
     </task>
     <servers />
   </component>
@@ -157,26 +130,26 @@
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="601" y="437" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/1920.79.1280.777/0.23.1920.1057@0.23.1920.1057" timestamp="1586281849504" />
-    <state width="1878" height="293" key="GridCell.Tab.0.bottom" timestamp="1586880900268">
+    <state width="1878" height="293" key="GridCell.Tab.0.bottom" timestamp="1586881335561">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state width="1878" height="279" key="GridCell.Tab.0.bottom/1920.56.1280.800/0.0.1920.1080@0.0.1920.1080" timestamp="1586565774939" />
-    <state width="1878" height="293" key="GridCell.Tab.0.bottom/1920.79.1280.777/0.23.1920.1057@0.23.1920.1057" timestamp="1586880900268" />
-    <state width="1878" height="293" key="GridCell.Tab.0.center" timestamp="1586880900267">
+    <state width="1878" height="293" key="GridCell.Tab.0.bottom/1920.79.1280.777/0.23.1920.1057@0.23.1920.1057" timestamp="1586881335561" />
+    <state width="1878" height="293" key="GridCell.Tab.0.center" timestamp="1586881335560">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state width="1878" height="279" key="GridCell.Tab.0.center/1920.56.1280.800/0.0.1920.1080@0.0.1920.1080" timestamp="1586565774936" />
-    <state width="1878" height="293" key="GridCell.Tab.0.center/1920.79.1280.777/0.23.1920.1057@0.23.1920.1057" timestamp="1586880900267" />
-    <state width="1878" height="293" key="GridCell.Tab.0.left" timestamp="1586880900266">
+    <state width="1878" height="293" key="GridCell.Tab.0.center/1920.79.1280.777/0.23.1920.1057@0.23.1920.1057" timestamp="1586881335560" />
+    <state width="1878" height="293" key="GridCell.Tab.0.left" timestamp="1586881335560">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state width="1878" height="279" key="GridCell.Tab.0.left/1920.56.1280.800/0.0.1920.1080@0.0.1920.1080" timestamp="1586565774934" />
-    <state width="1878" height="293" key="GridCell.Tab.0.left/1920.79.1280.777/0.23.1920.1057@0.23.1920.1057" timestamp="1586880900266" />
-    <state width="1878" height="293" key="GridCell.Tab.0.right" timestamp="1586880900267">
+    <state width="1878" height="293" key="GridCell.Tab.0.left/1920.79.1280.777/0.23.1920.1057@0.23.1920.1057" timestamp="1586881335560" />
+    <state width="1878" height="293" key="GridCell.Tab.0.right" timestamp="1586881335560">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state width="1878" height="279" key="GridCell.Tab.0.right/1920.56.1280.800/0.0.1920.1080@0.0.1920.1080" timestamp="1586565774937" />
-    <state width="1878" height="293" key="GridCell.Tab.0.right/1920.79.1280.777/0.23.1920.1057@0.23.1920.1057" timestamp="1586880900267" />
+    <state width="1878" height="293" key="GridCell.Tab.0.right/1920.79.1280.777/0.23.1920.1057@0.23.1920.1057" timestamp="1586881335560" />
     <state width="1874" height="357" key="GridCell.Tab.1.bottom" timestamp="1586829850242">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
