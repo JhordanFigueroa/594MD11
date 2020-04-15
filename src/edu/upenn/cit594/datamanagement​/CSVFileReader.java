@@ -7,9 +7,6 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.LinkedList;
-import java.util.List;
 
 public class CSVFileReader {
 
@@ -20,7 +17,6 @@ public class CSVFileReader {
     }
 
     public static ArrayList<State> getAllStates(String filename) {
-//        List<String[]> stateData = new LinkedList<>();
         ArrayList<State> stateData = new ArrayList<>();
         String stateRow;
         try {
@@ -33,8 +29,6 @@ public class CSVFileReader {
                 double stateLongitude = Double.parseDouble(stateInfo[2].trim());
 
                 State stateDetails = new State(state, stateLatitude, stateLongitude);
-
-//                System.out.println(stateDetails);
                 stateData.add(stateDetails);
             }
         } catch (FileNotFoundException e) {
@@ -44,11 +38,6 @@ public class CSVFileReader {
             System.out.println("COULD NOT READ FILE");
             e.printStackTrace();
         }
-
-//        for (State state : stateData) {
-//            System.out.println(state);
-//        }
-
         return stateData;
     }
 }

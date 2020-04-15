@@ -2,7 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="471508f8-668e-4488-a72d-25a6e65603b4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/edu/upenn/cit594/processor/StateOfTweet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Questions" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutweets" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/594MD11/edu/upenn/cit594/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/594MD11/edu/upenn/cit594/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/594MD11/edu/upenn/cit594/data/Tweet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/594MD11/edu/upenn/cit594/data/Tweet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/594MD11/edu/upenn/cit594/datamanagement/CSVFileReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/594MD11/edu/upenn/cit594/datamanagement/CSVFileReader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/594MD11/edu/upenn/cit594/datamanagement/TxtFileReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/594MD11/edu/upenn/cit594/datamanagement/TxtFileReader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/594MD11/edu/upenn/cit594/logging/Logger.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/594MD11/edu/upenn/cit594/logging/Logger.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/594MD11/edu/upenn/cit594/processor/CalculateDistance.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/594MD11/edu/upenn/cit594/processor/CalculateDistance.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/594MD11/edu/upenn/cit594/processor/FluTweet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/594MD11/edu/upenn/cit594/processor/FluTweet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/594MD11/edu/upenn/cit594/processor/StateTweet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/upenn/cit594/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/upenn/cit594/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/upenn/cit594/data/State.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/upenn/cit594/data/State.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/upenn/cit594/data/Tweet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/upenn/cit594/data/Tweet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/upenn/cit594/datamanagement​/CSVFileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/upenn/cit594/datamanagement​/CSVFileReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/upenn/cit594/datamanagement​/Reader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/upenn/cit594/datamanagement​/Reader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/upenn/cit594/datamanagement​/TxtFileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/upenn/cit594/datamanagement​/TxtFileReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/upenn/cit594/logging/Logger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/upenn/cit594/logging/Logger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/upenn/cit594/processor/CalculateDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/upenn/cit594/processor/CalculateDistance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/upenn/cit594/processor/FluTweet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/upenn/cit594/processor/FluTweet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/upenn/cit594/processor/StateTweet.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,8 +34,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -42,6 +64,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.intentionPowerPack" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -62,7 +85,7 @@
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="edu.upenn.cit594.Main" />
       <module name="594MD11" />
-      <option name="PROGRAM_PARAMETERS" value="text flu_tweets states.csv someLogFile" />
+      <option name="PROGRAM_PARAMETERS" value="json flu_tweets states.csv someLogFileName" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="edu.upenn.cit594.*" />
@@ -102,6 +125,7 @@
       <workItem from="1586808048523" duration="17258000" />
       <workItem from="1586829871326" duration="5000" />
       <workItem from="1586880129157" duration="658000" />
+      <workItem from="1586881339990" duration="30365000" />
     </task>
     <servers />
   </component>
@@ -109,11 +133,14 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="634" y="156" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586880867231">
-      <screen x="0" y="23" width="1920" height="1057" />
+    <state x="209" y="121" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586923124250">
+      <screen x="0" y="23" width="1280" height="777" />
     </state>
+    <state x="-1071" y="66" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1280.-32.1280.777/0.23.1920.1057@-1280.-32.1280.777" timestamp="1586922692452" />
+    <state x="-1071" y="46" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1280.-55.1280.800/0.0.1920.1080@-1280.-55.1280.800" timestamp="1586900878456" />
+    <state x="209" y="121" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1280.777@0.23.1280.777" timestamp="1586923124250" />
     <state x="634" y="136" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.56.1280.800/0.0.1920.1080@0.0.1920.1080" timestamp="1586565765934" />
-    <state x="634" y="156" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.79.1280.777/0.23.1920.1057@0.23.1920.1057" timestamp="1586880867231" />
+    <state x="634" y="156" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.79.1280.777/0.23.1920.1057@0.23.1920.1057" timestamp="1586892436370" />
     <state x="478" y="361" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586810538638">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
@@ -130,26 +157,42 @@
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="601" y="437" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/1920.79.1280.777/0.23.1920.1057@0.23.1920.1057" timestamp="1586281849504" />
-    <state width="1878" height="293" key="GridCell.Tab.0.bottom" timestamp="1586881335561">
-      <screen x="0" y="23" width="1920" height="1057" />
+    <state width="1233" height="227" key="GridCell.Tab.0.bottom" timestamp="1586923113339">
+      <screen x="0" y="23" width="1280" height="777" />
     </state>
+    <state width="1233" height="227" key="GridCell.Tab.0.bottom/-1280.-32.1280.777/0.23.1920.1057@-1280.-32.1280.777" timestamp="1586922697278" />
+    <state width="1238" height="200" key="GridCell.Tab.0.bottom/-1280.-55.1280.800/0.0.1920.1080@-1280.-55.1280.800" timestamp="1586912605294" />
+    <state width="1878" height="167" key="GridCell.Tab.0.bottom/-1280.-55.1280.800/0.0.1920.1080@0.0.1920.1080" timestamp="1586898254534" />
+    <state width="1233" height="227" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1586923113339" />
     <state width="1878" height="279" key="GridCell.Tab.0.bottom/1920.56.1280.800/0.0.1920.1080@0.0.1920.1080" timestamp="1586565774939" />
-    <state width="1878" height="293" key="GridCell.Tab.0.bottom/1920.79.1280.777/0.23.1920.1057@0.23.1920.1057" timestamp="1586881335561" />
-    <state width="1878" height="293" key="GridCell.Tab.0.center" timestamp="1586881335560">
-      <screen x="0" y="23" width="1920" height="1057" />
+    <state width="1878" height="341" key="GridCell.Tab.0.bottom/1920.79.1280.777/0.23.1920.1057@0.23.1920.1057" timestamp="1586892904690" />
+    <state width="1233" height="227" key="GridCell.Tab.0.center" timestamp="1586923113337">
+      <screen x="0" y="23" width="1280" height="777" />
     </state>
+    <state width="1233" height="227" key="GridCell.Tab.0.center/-1280.-32.1280.777/0.23.1920.1057@-1280.-32.1280.777" timestamp="1586922697276" />
+    <state width="1238" height="200" key="GridCell.Tab.0.center/-1280.-55.1280.800/0.0.1920.1080@-1280.-55.1280.800" timestamp="1586912605292" />
+    <state width="1878" height="167" key="GridCell.Tab.0.center/-1280.-55.1280.800/0.0.1920.1080@0.0.1920.1080" timestamp="1586898254532" />
+    <state width="1233" height="227" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1586923113337" />
     <state width="1878" height="279" key="GridCell.Tab.0.center/1920.56.1280.800/0.0.1920.1080@0.0.1920.1080" timestamp="1586565774936" />
-    <state width="1878" height="293" key="GridCell.Tab.0.center/1920.79.1280.777/0.23.1920.1057@0.23.1920.1057" timestamp="1586881335560" />
-    <state width="1878" height="293" key="GridCell.Tab.0.left" timestamp="1586881335560">
-      <screen x="0" y="23" width="1920" height="1057" />
+    <state width="1878" height="341" key="GridCell.Tab.0.center/1920.79.1280.777/0.23.1920.1057@0.23.1920.1057" timestamp="1586892904689" />
+    <state width="1233" height="227" key="GridCell.Tab.0.left" timestamp="1586923113335">
+      <screen x="0" y="23" width="1280" height="777" />
     </state>
+    <state width="1233" height="227" key="GridCell.Tab.0.left/-1280.-32.1280.777/0.23.1920.1057@-1280.-32.1280.777" timestamp="1586922697276" />
+    <state width="1238" height="200" key="GridCell.Tab.0.left/-1280.-55.1280.800/0.0.1920.1080@-1280.-55.1280.800" timestamp="1586912605290" />
+    <state width="1878" height="167" key="GridCell.Tab.0.left/-1280.-55.1280.800/0.0.1920.1080@0.0.1920.1080" timestamp="1586898254531" />
+    <state width="1233" height="227" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1586923113335" />
     <state width="1878" height="279" key="GridCell.Tab.0.left/1920.56.1280.800/0.0.1920.1080@0.0.1920.1080" timestamp="1586565774934" />
-    <state width="1878" height="293" key="GridCell.Tab.0.left/1920.79.1280.777/0.23.1920.1057@0.23.1920.1057" timestamp="1586881335560" />
-    <state width="1878" height="293" key="GridCell.Tab.0.right" timestamp="1586881335560">
-      <screen x="0" y="23" width="1920" height="1057" />
+    <state width="1878" height="341" key="GridCell.Tab.0.left/1920.79.1280.777/0.23.1920.1057@0.23.1920.1057" timestamp="1586892904688" />
+    <state width="1233" height="227" key="GridCell.Tab.0.right" timestamp="1586923113337">
+      <screen x="0" y="23" width="1280" height="777" />
     </state>
+    <state width="1233" height="227" key="GridCell.Tab.0.right/-1280.-32.1280.777/0.23.1920.1057@-1280.-32.1280.777" timestamp="1586922697277" />
+    <state width="1238" height="200" key="GridCell.Tab.0.right/-1280.-55.1280.800/0.0.1920.1080@-1280.-55.1280.800" timestamp="1586912605293" />
+    <state width="1878" height="167" key="GridCell.Tab.0.right/-1280.-55.1280.800/0.0.1920.1080@0.0.1920.1080" timestamp="1586898254533" />
+    <state width="1233" height="227" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1586923113337" />
     <state width="1878" height="279" key="GridCell.Tab.0.right/1920.56.1280.800/0.0.1920.1080@0.0.1920.1080" timestamp="1586565774937" />
-    <state width="1878" height="293" key="GridCell.Tab.0.right/1920.79.1280.777/0.23.1920.1057@0.23.1920.1057" timestamp="1586881335560" />
+    <state width="1878" height="341" key="GridCell.Tab.0.right/1920.79.1280.777/0.23.1920.1057@0.23.1920.1057" timestamp="1586892904690" />
     <state width="1874" height="357" key="GridCell.Tab.1.bottom" timestamp="1586829850242">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
@@ -166,17 +209,17 @@
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state width="1874" height="357" key="GridCell.Tab.1.right/1920.79.1280.777/0.23.1920.1057@0.23.1920.1057" timestamp="1586829850242" />
-    <state x="366" y="133" key="SettingsEditor" timestamp="1586302073302">
+    <state x="366" y="133" key="SettingsEditor" timestamp="1586889573930">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state x="366" y="133" key="SettingsEditor/1920.79.1280.777/0.23.1920.1057@0.23.1920.1057" timestamp="1586302073302" />
+    <state x="366" y="133" key="SettingsEditor/1920.79.1280.777/0.23.1920.1057@0.23.1920.1057" timestamp="1586889573930" />
     <state x="244" y="384" key="com.intellij.ide.util.TipDialog" timestamp="1586880128666">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="244" y="384" key="com.intellij.ide.util.TipDialog/1920.79.1280.777/0.23.1920.1057@0.23.1920.1057" timestamp="1586880128666" />
-    <state x="627" y="258" width="670" height="676" key="search.everywhere.popup" timestamp="1586829074348">
+    <state x="627" y="258" width="670" height="676" key="search.everywhere.popup" timestamp="1586889569641">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state x="627" y="258" width="670" height="676" key="search.everywhere.popup/1920.79.1280.777/0.23.1920.1057@0.23.1920.1057" timestamp="1586829074348" />
+    <state x="627" y="258" width="670" height="676" key="search.everywhere.popup/1920.79.1280.777/0.23.1920.1057@0.23.1920.1057" timestamp="1586889569641" />
   </component>
 </project>

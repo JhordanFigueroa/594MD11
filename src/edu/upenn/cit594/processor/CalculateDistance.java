@@ -1,12 +1,10 @@
 package edu.upenn.cit594.processor;
 
 public class CalculateDistance {
-    double x1;
-    double y1;
-    double x2;
-    double y2;
 
-    public double calculateDistanceBetweenTwoLocations() {
-        return Math.sqrt((y2 - y1) * (y2 - y1) + (x2 - x1) * (x2 - x1));
+    public double calculateDistanceBetweenTwoLocations(Double x1, Double y1, Double x2, Double y2) {
+        double distance = 0;
+        distance = Math.sqrt((y2 - y1) * (y2 - y1) + (x2 - x1) * (x2 - x1));
+        return distance;
     }
 }

@@ -5,7 +5,6 @@ import edu.upenn.cit594.data.Tweet;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
 public class TxtFileReader implements Reader{
@@ -17,7 +16,6 @@ public class TxtFileReader implements Reader{
         this.filename = filename;
         this.fileFormat = fileFormat;
     }
-
     public ArrayList<Tweet> getAllTweets() {
         ArrayList<Tweet> tweets = new ArrayList<>();
         String fileToParse = filename + "." + fileFormat;

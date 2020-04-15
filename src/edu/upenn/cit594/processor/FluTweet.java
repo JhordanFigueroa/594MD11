@@ -3,14 +3,17 @@ package edu.upenn.cit594.processor;
 import edu.upenn.cit594.data.Tweet;
 
 import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class FluTweet {
-    ArrayList<Tweet> fluTweets = new ArrayList<>();
-    String fluPattern = "\\W*(?i)(flu)(?-i)\\W";
+    Set<Tweet> fluTweets = new HashSet<>();
+    String fluPattern = "(((?i)flu\\W)|FLU\\z)";
 
-    public ArrayList<Tweet> getFluTweets(ArrayList<Tweet> allTweets) {
+
+    public Set<Tweet> getFluTweets(ArrayList<Tweet> allTweets) {
         Pattern p = Pattern.compile(fluPattern);
 
         for (Tweet tw : allTweets) {
@@ -21,9 +24,6 @@ public class FluTweet {
 
             Matcher match = p.matcher(tweetContent);
             while (match.find()) {
-                System.out.println(tweetContent);
-                System.out.println(tweetLatitude);
-                System.out.println(tweetLongitude);
 
                 Tweet fluTweet = new Tweet(tweetContent, tweetTime, tweetLatitude, tweetLongitude);
                 fluTweets.add(fluTweet);
